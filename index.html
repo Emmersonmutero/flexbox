@@ -1,0 +1,142 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Stylish Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+</head>
+<body>
+
+  <!-- Hero Section with hamburger and nav -->
+  <section class="hero" id="hero">
+    <div class="nav-container">
+      <div class="logo">Stylish</div>
+      <div class="hamburger">&#9776;</div>
+      <ul class="nav-links">
+      
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+
+      </ul>
+    </div>
+    <div class="content">
+      <h1>Stylish Portfolio</h1>
+      <p>A Free Bootstrap Theme by Start Bootstrap</p>
+      <a href="#" class="btn">Find Out More</a>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="about" id="about">
+    <h2>Stylish Portfolio is a perfect theme for your next project!</h2>
+    <p>This theme features a flexible, UX-friendly sidebar menu and stock photos from our friends at Unsplash!</p>
+    <a href="#" class="btn">What We Offer</a>
+  </section>
+
+  <!-- Services Section -->
+  <section class="services" id="services">
+    <h1>Services</h1>
+    <h2>What We Offer</h2>
+    <div id="icon">
+      <div class="responsive">
+        <img src="/flexbox-proj-imgs/1st.png" alt="Responsive" class="pic" />
+        <h2>Responsive</h2>
+        <p>Looks great on any screen size!</p>
+      </div>
+      <div class="responsive">
+        <img src="/flexbox-proj-imgs/2nd.png" alt="Redesigned" class="pic" />
+        <h2>Redesigned</h2>
+        <p>Freshly redesigned for Bootstrap 4.</p>
+      </div>
+      <div class="responsive">
+        <img src="/flexbox-proj-imgs/3rd.png" alt="Favorited" class="pic" />
+        <h2>Favorited</h2>
+        <p>Millions of users ❤ Start Bootstrap!</p>
+      </div>
+      <div class="responsive">
+        <img src="/flexbox-proj-imgs/4th.png" alt="Question" class="pic" />
+        <h2>Question</h2>
+        <p>I mustache you a question.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Welcome Section -->
+  <section class="welcome">
+    <div class="welcome-content">
+      <h2>Welcome to your <br /> next website!</h2>
+      <a href="#" class="btn">Download Now!</a>
+    </div>
+  </section>
+
+  <!-- Portfolio Section -->
+  <section class="portfolio" id="portfolio">
+    <div class="portfolio-header">
+      <p>PORTFOLIO</p>
+      <h1>Recent Projects</h1>
+    </div>
+    <div class="recent-projects">
+      <div class="project-card">
+        <img src="/flexbox-proj-imgs/portfolio-1.jpg" alt="Stationary" class="recent" />
+        <h3>STATIONARY</h3>
+        <p>A yellow pencil with envelopes on a clean, blue backdrop!</p>
+      </div>
+      <div class="project-card">
+        <img src="/flexbox-proj-imgs/portfolio-2.jpg" alt="Ice Cream" class="recent" />
+        <h3>ICE CREAM</h3>
+        <p>A dark blue background with a colored pencil, a clip, and a tiny ice cream cone!</p>
+      </div>
+      <div class="project-card">
+        <img src="/flexbox-proj-imgs/portfolio-3.jpg" alt="Strawberries" class="recent" />
+        <h3>STRAWBERRIES</h3>
+        <p>Strawberries are such a tasty snack, especially with a little sugar on top!</p>
+      </div>
+      <div class="project-card">
+        <img src="/flexbox-proj-imgs/portfolio-4.jpg" alt="Workspace" class="recent" />
+        <h3>WORKSPACE</h3>
+        <p>A yellow workspace with some scissors, pencils, and other objects.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Call to Action Section -->
+  <section class="clickme">
+    <div>
+      <p>The button below are impossible to resist...</p>
+      <div class="buttons">
+        <a href="#" class="btn1">Click Me!</a>
+        <a href="#" class="btn2">Look at Me!</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Final Map & Icons Section -->
+  <section class="map-social" id="contact">
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.202625203426!2d-122.4218336852594!3d37.77659897975907!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808f7e3215a13fd7%3A0x1a4e2fbb4a8a33ef!2sTwitter%20HQ!5e0!3m2!1sen!2sus!4v1606855798775!5m2!1sen!2sus"
+      width="100%" height="400" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+      tabindex="0"></iframe>
+    <div class="social-icons">
+      <a href="#"><img src="/flexbox-proj-imgs/fb.png" alt="Icon1" /></a>
+      <a href="#"><img src="/flexbox-proj-imgs/twitter.png" alt="Icon2" /></a>
+      <a href="#"><img src="/flexbox-proj-imgs/github.png" alt="Icon3" /></a>
+    </div>
+  </section>
+
+  <script>
+    // Hamburger toggle script
+    document.addEventListener("DOMContentLoaded", () => {
+      const hamburger = document.querySelector(".hamburger");
+      const navLinks = document.querySelector(".nav-links");
+
+      hamburger.addEventListener("click", () => {
+        navLinks.classList.toggle("active");
+      });
+    });
+  </script>
+
+</body>
+</html>
